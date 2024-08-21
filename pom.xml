@@ -246,7 +246,7 @@
                     <!--</plugin>-->
 
                     <!-- PMD -->
-                   <!-- <plugin>
+                    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
                         <version>3.2</version>
@@ -255,22 +255,13 @@
                             <aggregate>true</aggregate>
                             <format>xml</format>
                             <!-- CPD options -->
-                          <!--  <minimumTokens>20</minimumTokens>
-                            <!--<ignoreIdentifiers>true</ignoreIdentifiers>-->
-                           <!-- <failOnViolation>true</failOnViolation>
+                          <minimumTokens>20</minimumTokens>
+                          <ignoreIdentifiers>true</ignoreIdentifiers>-->
+                           <failOnViolation>true</failOnViolation>
                             <failurePriority>2</failurePriority>
                         </configuration>
-                    </plugin> -->
-			<plugin>
-  			  <groupId>org.codehaus.mojo</groupId>
-  			  <artifactId>cobertura-maven-plugin</artifactId>
-  			  <configuration>
-       			<formats>
-           		<format>html</format>
-          		 <format>xml</format>
-       			</formats>
-   			 </configuration>
-			</plugin>
+                    </plugin> 
+			
 			
 
                     <!-- FINDBUGS -->
